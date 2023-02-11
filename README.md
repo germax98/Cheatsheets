@@ -9,6 +9,7 @@ This repository is a compilation of cheat sheets I created after I learned a new
 - Python Array Functions
 - Sass
 - Boostrap
+- SQL 
 
 # Upcoming Cheatsheets
 
