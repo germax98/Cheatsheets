@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <!--Inputs-->
+    <div class="container">
+        <form action="">
+    
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control"id="email">
+            
+        </form>
+        <!--Checkboxes-->
+        <form action="">
+            <div class="form-check form-switch form-check-inline"> <!--it is important to wrap checkboses in a separte container named form check. form-check-inline makes the checkboxes inline -->
+                <label for="checkbox" class="form-check-label">checkbox</label>
+                <input type="email" class="form-check-input"id="email">
+            </div>
+            <div class="form-check form-check-inline">
+                <label for="checkbox" class="form-check-label">checkbox</label>
+                <input type="email" class="form-check-input"id="email">
+            </div>
+        </form>
+        <!--Input groups-->
+        <form action="">
+            <label for="text" class="form-label">Text</label>
+            <div class="input-group">
+                <input type="text" id="text" class="form-control">
+                <input type="text" id="text2" class="form-control">
+            </div>
+            <label for="text" class="form-label">Amount</label>
+            <div class="input-group">
+                <div class="input-group-text">$</div>
+                <input type="number" id="text2" class="form-control">
+                <div class="input-group-text">.00</div>
+            </div>
+            
+        </form>
+        <!--Animation floating Label -->
+        <div class="form-floating">
+            <input type="email" id="email" class="form-control" placeholder="Place email here" required>
+            <label for="email" class="form-label">Email</label> <!--Label must come after the input-->
+        </div>
+        <button>Submit</button>
+    </div>
+    <script>
+        const form = document.querySelector("form")
+        form.addEventListener("submit",e =>{
+            if(!form.checkValidity()){
+                e.preventDefault()
+            }
+            form.classList.add('was-validated') //add to html
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
