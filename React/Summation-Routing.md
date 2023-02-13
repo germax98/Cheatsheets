@@ -1,4 +1,4 @@
-# ----------------React Routing---------
+# React Routing
 
 To use Routing in React the package routing is needed. There for enter the command:
 
@@ -6,7 +6,7 @@ yarn add react-router-dom@6
 
 into the Terminal
 
-## ----------------index.js---------
+## index.js
 
 import the PAckage into the index.js file 
 
@@ -28,7 +28,7 @@ root.render(
 );
 ```
 
-## ----------------routes ----------------
+## Routes 
 
 Add a new Folder named 'routes' where all Routing Components are added. 
 
@@ -62,14 +62,14 @@ const Navigation = ()=> {
   ```
   export default Navigation
 
-### ----------------Fragment----------------
+### Fragment
 
 Fragment is a component in React that allows you to return multiple components or elements without adding an extra node to the DOM. It's often used when you want to return multiple elements but don't want to wrap them in an additional HTML element.
 
 
-### ----------------Link----------------
+### Link
 Link is a component in the "react-router-dom" library that is used for navigation in React applications. It's similar to an HTML <a> tag, but it's specifically designed to work with React Router and provides a way to navigate to different routes in your application. with the attribute 'to' I am able to specifie where the path should lead.
 
 
-### ----------------Outlet----------------
+### Outlet
 The Outlet component is part of the "react-router" library, which provides routing capabilities for React applications. It is used to specify where the components associated with the current route should be rendered (before or after).
