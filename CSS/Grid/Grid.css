@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-flex-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap: 10px;
+    border: 1px solid red;
+}
+.one {
+    display: grid;
+    place-items: center;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+.flex-box{
+    
+    background-color: bisque; 
+     border: 1px solid rgb(19, 19, 19);
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    
+    justify-content: space-evenly;
+  
+   
+}
+li{
+    
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.second-grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 200px 400px;
+    border: 1px solid rgb(26, 255, 0);
+    grid-gap: 10px;
+}
+.two{
+    background-color: rgb(80, 82, 82);
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.one-l{
+    grid-row-start: span 2;
+    background-color: rgb(238, 0, 255);
+}
+.three-l-m{
+    background-color: brown;
+    grid-column-start: span 2 ;
+}
+.four-r{
+    background-color: beige;
+}
+
+
+
+
+
+.third-grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px ;
+    border: 1px solid rgb(0, 34, 255);
+}
+.left{
+    background-color: blueviolet;
+    display: grid;
+    place-items: center;
+
+}
+.rechts{
+    background-color: darkcyan;
+}
+.overlay{
+    width: 200px;
+    height: 100px;
+    background-color: aliceblue;
+    display: grid;
+    place-items: center;
+}
