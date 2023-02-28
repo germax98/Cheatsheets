@@ -10,10 +10,10 @@ This repository is a compilation of cheat sheets I created after I learned a new
 - Sass
 - Boostrap
 - SQL 
+- React
 
 # Upcoming Cheatsheets
 
-- React
 - Docker
 - Node js
 - Express
